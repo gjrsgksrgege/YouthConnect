@@ -8,7 +8,7 @@ function App() {
     <>
       <BrowserRouter basename="/YouthConnect">
         <Routes>
-          <Route index element={<Index />} />
+          <Route path="/" element={<Index />} />
           <Route path="/login" element={<Login />} />
           <Route path="/signup" element={<Signup />} />
         </Routes>
