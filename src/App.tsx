@@ -6,7 +6,7 @@ import Index from "./pages/user/index";
 function App() {
   return (
     <>
-      <BrowserRouter>
+      <BrowserRouter basename="/YouthConnect">
         <Routes>
           <Route index element={<Index />} />
           <Route path="/login" element={<Login />} />
