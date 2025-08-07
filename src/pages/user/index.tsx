@@ -23,9 +23,9 @@ const Index = () => {
         </div>
 
         <h1 className="text-4xl lg:text-6xl xl:text-7xl text-center font-black tracking-tighter md:max-w-[85%] lg:max-w-[60%] capitalize">
-          A place with aims to{" "}
-          <span className="text-[#ffc808]">Reach young people</span> the
-          goodness He has shown us
+          A place with aims to <br />
+          <span className="text-[#ffc808]">Reach young people</span>
+          <br /> the goodness He has shown us
         </h1>
 
         <p className="text-center text-sm md:max-w-[50%] md:text-lg lg:max-w-[55%]">
@@ -72,8 +72,11 @@ const Index = () => {
 
         <div className="mt-4 lg:mt-24 w-full max-w-[450px] bg-gray-600 p-6 rounded-xl shrink-0">
           <div className="flex flex-col gap-2 items-center justify-center text-white">
-            <p>We share, We listen</p>
-            <Button BtnName="Join the academy" />
+            <p className="capitalize">
+              We listen, and we don't judge.
+              <br /> sharing edition
+            </p>
+            <Button BtnName="Share your Thoughts" />
           </div>
         </div>
       </section>
