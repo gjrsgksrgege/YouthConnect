@@ -1,6 +1,5 @@
-import Navbar from "../../component/navbar";
-import Footer from "../../component/footer";
 import Button from "../../component/button";
+import { Link } from "react-router-dom";
 
 import SkpLogo from "../../assets/skp-logo.png";
 import ParishLogo from "../../assets/parish-logo.png";
@@ -14,8 +13,7 @@ import Photo6 from "../../assets/g6.png";
 const Index = () => {
   return (
     <>
-      <Navbar />
-      <section className="mx-auto max-w-[96rem] flex flex-col items-center justify-center p-4 md:p-12 lg:px-24 gap-4 md:gap-6">
+      <section className="flex flex-col items-center justify-center gap-4 md:gap-6">
         <div className="flex flex-row items-center gap-4 md:gap-6">
           <img src={SkpLogo} className="w-16 h-auto" />
           <div className="h-20 w-[2px] bg-gray-300"></div>
@@ -72,15 +70,16 @@ const Index = () => {
 
         <div className="mt-4 lg:mt-24 w-full max-w-[450px] bg-gray-600 p-6 rounded-xl shrink-0">
           <div className="flex flex-col gap-2 items-center justify-center text-white">
-            <p className="capitalize">
+            <p className="capitalize text-center">
               We listen, and we don't judge.
               <br /> sharing edition
             </p>
-            <Button BtnName="Share your Thoughts" />
+            <Link to="/Share">
+              <Button BtnName="Share your Thoughts" />
+            </Link>
           </div>
         </div>
       </section>
-      <Footer />
     </>
   );
 };
